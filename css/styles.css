@@ -1,0 +1,150 @@
+/*General Stylesheet */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Futura', sans-serif;
+    color: #ffffff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Futura', sans-serif;
+    background-color: #000;
+    color: #ffffff;
+    background-image: url('../images/motorway-light-trails.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.content-container {
+    width: 80%;
+    max-width: 1200px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/*Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px; 
+}
+
+.name h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.contact-info p {
+    margin: 0;
+    text-align: right;
+}
+
+.contact-info a {
+    color: #FF0060;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/*Main Content Layout */
+.main-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px; 
+}
+
+.main-content section {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px; 
+    border-radius: 8px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+/*Contact Form */
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #ffffff;
+    resize: none;
+}
+
+.contact-form textarea {
+    height: 100px;
+}
+
+.contact-form button {
+    padding: 10px;
+    background-color: #FF0060;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #e60050;
+}
+
+/*Responsive Layout */
+@media screen and (max-width: 768px) {
+    .main-content {
+        grid-template-columns: 1fr;
+    }
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-info p {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .name h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+}

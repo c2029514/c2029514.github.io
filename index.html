@@ -4,37 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sebgraham.me</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Futura:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Seb Graham - Portfolio</h1>
-    </header>
+    <div class="content-container">
+        <header class="header">
+            <div class="name">
+                <h1>Seb Graham</h1>
+            </div>
+            <div class="contact-info">
+                <p>Email: <a href="mailto:seb@sebgraham.me">seb@sebgraham.me</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/seb-graham1/" target="_blank">LinkedIn</a></p>
+            </div>
+        </header>
 
-    <section>
-        <h2>About Me</h2>
-        <p>Hello, I'm Seb Graham, a passionate and skilled Geospatial Engineering Student based in Kent. I specialise in GIS and surveying, and I'm dedicated to delivering high-quality solutions that meet my clients' needs.</p>
-        
-        <h2>Geospatial</h2>
-        <p>In addition to my general expertise, I have specific experience in the field of Geospatial. I have worked on projects involving CAD, terrestrial surveying and GIS. This includes using ArcGIS Pro, LSS, AutoCAD, FME and Python.</p>
-    </section>
+        <main class="main-content">
+            <section class="about">
+                <h2>About Me</h2>
+                <p>Hi, I'm Seb. I'm currently a Geospatial Engineering Student at Newcastle Univeristy, but I also have experience in Administration and Operations.</p>
+            </section>
 
-    <section>
-        <h2>Contact Information</h2>
-        <div class="contact-info">
-            <p><a href="mailto:website.inbox@sebgraham.me" class="contact-button">Send me an Email</a></p>
-            <p><a href="https://www.linkedin.com/in/seb-graham1/" target="_blank" class="contact-button">Connect with me on LinkedIn</a></p>
-            <p><a href="https://github.com/c2029514" target="_blank" class="contact-button">Visit my GitHub profile</a></p>
-        </div>
-    </section>
+            <section class="skills">
+                <h2>Proficiencies</h2>
+                <p>Terrestrial surveying, GIS, Python, Database Managament, Project Managament, DNS & Domain Management, Windows (Server), Linux, Administration & Operations</p>
+            </section>
 
-    <footer>
-        <div>
-            &copy; 2023 Seb Graham | <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
-        </div>
-        <div>
-            Admin Login: <a href="admin-login.html" class="footer-link">Login</a>
-        </div>
-    </footer>
+            <section class="projects">
+                <h2>Projects</h2>
+                <ul>
+                    <li>Database management using MySQL</li>
+                    <li>Full 2.5D topographical survey of buidling on campus with creation of deliverables and pricing</li>
+                    <li>Processing and and comparison between terrestiral laser scanned and RPAS imagery data</li>
+                    <li>Full MCE report for land suitability in ArcGIS Pro</li>
+            </ul>
+            </section>
+
+            <section class="contact-form">
+                <h2>Contact Me</h2>
+                <p>Powered by formspree.io</p>
+                <form
+                    action="https://formspree.io/f/myzgjjva"
+                    method="POST"
+                >   <label>
+                    Name:
+                    <input type="name" name="name">
+                    </label>
+                    <label>
+                        Your email:
+                        <input type="email" name="email">
+                    </label>
+                    <label>
+                        Message:
+                        <textarea name="message"></textarea>
+                    </label>
+                    <button type="submit">Send</button>
+                </form>
+            </section>
+        </main>
+    </div>
 </body>
 </html>
